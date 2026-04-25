@@ -1,0 +1,872 @@
+[
+  {
+    "id": "a001",
+    "headline": "AAPL beats earnings estimates as cloud revenue surges 22%",
+    "ticker": "AAPL",
+    "source": "Financial Times",
+    "date": "2024-09-03",
+    "human": "positive",
+    "vader": {
+      "compound": 0.9213,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.665
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.585
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 3,
+      "severity": 4,
+      "confirmation": 3,
+      "novelty": 1.0,
+      "justification": 4,
+      "calibration": 3
+    }
+  },
+  {
+    "id": "a002",
+    "headline": "MSFT misses Q3 expectations, shares slide in after-hours trading",
+    "ticker": "MSFT",
+    "source": "WSJ",
+    "date": "2024-09-10",
+    "human": "negative",
+    "vader": {
+      "compound": -0.791,
+      "label": "negative"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.915
+    },
+    "roberta": {
+      "label": "negative",
+      "confidence": 0.633
+    },
+    "gemini": {
+      "label": "negative",
+      "polarity": -3,
+      "severity": 4,
+      "confirmation": 4,
+      "novelty": 0.2,
+      "justification": 4,
+      "calibration": 4
+    }
+  },
+  {
+    "id": "a003",
+    "headline": "GOOGL announces $20B share buyback program",
+    "ticker": "GOOGL",
+    "source": "Reuters",
+    "date": "2024-09-14",
+    "human": "positive",
+    "vader": {
+      "compound": 0.4256,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "positive",
+      "confidence": 0.743
+    },
+    "roberta": {
+      "label": "positive",
+      "confidence": 0.594
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 2,
+      "severity": 3,
+      "confirmation": 4,
+      "novelty": 0.4,
+      "justification": 3,
+      "calibration": 4
+    }
+  },
+  {
+    "id": "a004",
+    "headline": "JPM faces antitrust probe from European regulators",
+    "ticker": "JPM",
+    "source": "Bloomberg",
+    "date": "2024-09-20",
+    "human": "negative",
+    "vader": {
+      "compound": 0.4286,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.669
+    },
+    "roberta": {
+      "label": "negative",
+      "confidence": 0.802
+    },
+    "gemini": {
+      "label": "negative",
+      "polarity": -3,
+      "severity": 4,
+      "confirmation": 5,
+      "novelty": 0.8,
+      "justification": 4,
+      "calibration": 4
+    }
+  },
+  {
+    "id": "a005",
+    "headline": "XOM unveils new flagship product to mixed analyst reaction",
+    "ticker": "XOM",
+    "source": "CNBC",
+    "date": "2024-09-27",
+    "human": "neutral",
+    "vader": {
+      "compound": 0.2742,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.9
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.661
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 1,
+      "severity": 2,
+      "confirmation": 4,
+      "novelty": 0.8,
+      "justification": 4,
+      "calibration": 5
+    }
+  },
+  {
+    "id": "a006",
+    "headline": "TSLA cuts full-year guidance citing weak consumer demand",
+    "ticker": "TSLA",
+    "source": "Financial Times",
+    "date": "2024-10-01",
+    "human": "negative",
+    "vader": {
+      "compound": 0.199,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.949
+    },
+    "roberta": {
+      "label": "negative",
+      "confidence": 0.906
+    },
+    "gemini": {
+      "label": "negative",
+      "polarity": -2,
+      "severity": 5,
+      "confirmation": 5,
+      "novelty": 1.0,
+      "justification": 5,
+      "calibration": 5
+    }
+  },
+  {
+    "id": "a007",
+    "headline": "AAPL raises dividend by 8%, signaling confidence in cash flow",
+    "ticker": "AAPL",
+    "source": "WSJ",
+    "date": "2024-10-09",
+    "human": "positive",
+    "vader": {
+      "compound": 0.7824,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "positive",
+      "confidence": 0.836
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.861
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 2,
+      "severity": 3,
+      "confirmation": 4,
+      "novelty": 0.2,
+      "justification": 3,
+      "calibration": 5
+    }
+  },
+  {
+    "id": "a008",
+    "headline": "MSFT CEO steps down after board disagreement",
+    "ticker": "MSFT",
+    "source": "Reuters",
+    "date": "2024-10-17",
+    "human": "negative",
+    "vader": {
+      "compound": 0.5932,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.773
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.558
+    },
+    "gemini": {
+      "label": "negative",
+      "polarity": -3,
+      "severity": 4,
+      "confirmation": 4,
+      "novelty": 1.0,
+      "justification": 3,
+      "calibration": 3
+    }
+  },
+  {
+    "id": "a009",
+    "headline": "GOOGL reports record quarterly revenue, profit margins expand",
+    "ticker": "GOOGL",
+    "source": "Bloomberg",
+    "date": "2024-10-21",
+    "human": "positive",
+    "vader": {
+      "compound": 0.4711,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.775
+    },
+    "roberta": {
+      "label": "negative",
+      "confidence": 0.58
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 2,
+      "severity": 4,
+      "confirmation": 4,
+      "novelty": 0.6,
+      "justification": 5,
+      "calibration": 5
+    }
+  },
+  {
+    "id": "a010",
+    "headline": "JPM explores strategic alternatives amid activist pressure",
+    "ticker": "JPM",
+    "source": "CNBC",
+    "date": "2024-10-29",
+    "human": "neutral",
+    "vader": {
+      "compound": 0.2892,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.765
+    },
+    "roberta": {
+      "label": "negative",
+      "confidence": 0.904
+    },
+    "gemini": {
+      "label": "neutral",
+      "polarity": 0,
+      "severity": 3,
+      "confirmation": 3,
+      "novelty": 0.4,
+      "justification": 5,
+      "calibration": 3
+    }
+  },
+  {
+    "id": "a011",
+    "headline": "XOM shares fall on report of supply chain disruption",
+    "ticker": "XOM",
+    "source": "Financial Times",
+    "date": "2024-11-04",
+    "human": "negative",
+    "vader": {
+      "compound": -0.6667,
+      "label": "negative"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.821
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.668
+    },
+    "gemini": {
+      "label": "negative",
+      "polarity": -2,
+      "severity": 3,
+      "confirmation": 5,
+      "novelty": 1.0,
+      "justification": 5,
+      "calibration": 4
+    }
+  },
+  {
+    "id": "a012",
+    "headline": "TSLA secures multi-year cloud deal with U.S. government",
+    "ticker": "TSLA",
+    "source": "WSJ",
+    "date": "2024-11-06",
+    "human": "positive",
+    "vader": {
+      "compound": 0.6512,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "positive",
+      "confidence": 0.955
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.757
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 2,
+      "severity": 4,
+      "confirmation": 4,
+      "novelty": 0.2,
+      "justification": 4,
+      "calibration": 4
+    }
+  },
+  {
+    "id": "a013",
+    "headline": "Analysts upgrade AAPL to overweight on improving fundamentals",
+    "ticker": "AAPL",
+    "source": "Reuters",
+    "date": "2024-11-13",
+    "human": "positive",
+    "vader": {
+      "compound": 0.437,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.702
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.569
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 2,
+      "severity": 2,
+      "confirmation": 4,
+      "novelty": 1.0,
+      "justification": 3,
+      "calibration": 4
+    }
+  },
+  {
+    "id": "a014",
+    "headline": "MSFT warns of higher loan-loss provisions in coming quarters",
+    "ticker": "MSFT",
+    "source": "Bloomberg",
+    "date": "2024-11-18",
+    "human": "negative",
+    "vader": {
+      "compound": -0.7148,
+      "label": "negative"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.853
+    },
+    "roberta": {
+      "label": "positive",
+      "confidence": 0.773
+    },
+    "gemini": {
+      "label": "negative",
+      "polarity": -3,
+      "severity": 3,
+      "confirmation": 3,
+      "novelty": 0.8,
+      "justification": 5,
+      "calibration": 4
+    }
+  },
+  {
+    "id": "a015",
+    "headline": "GOOGL announces layoffs affecting 5% of global workforce",
+    "ticker": "GOOGL",
+    "source": "CNBC",
+    "date": "2024-11-27",
+    "human": "negative",
+    "vader": {
+      "compound": -0.7563,
+      "label": "negative"
+    },
+    "finbert": {
+      "label": "negative",
+      "confidence": 0.887
+    },
+    "roberta": {
+      "label": "negative",
+      "confidence": 0.806
+    },
+    "gemini": {
+      "label": "negative",
+      "polarity": -3,
+      "severity": 3,
+      "confirmation": 3,
+      "novelty": 1.0,
+      "justification": 4,
+      "calibration": 4
+    }
+  },
+  {
+    "id": "a016",
+    "headline": "JPM posts in-line results, outlook unchanged",
+    "ticker": "JPM",
+    "source": "Financial Times",
+    "date": "2024-11-30",
+    "human": "neutral",
+    "vader": {
+      "compound": 0.5291,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.856
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.863
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 1,
+      "severity": 1,
+      "confirmation": 5,
+      "novelty": 0.6,
+      "justification": 5,
+      "calibration": 4
+    }
+  },
+  {
+    "id": "a017",
+    "headline": "XOM stock hits 52-week high after upbeat investor day",
+    "ticker": "XOM",
+    "source": "WSJ",
+    "date": "2024-12-10",
+    "human": "positive",
+    "vader": {
+      "compound": 0.5813,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.91
+    },
+    "roberta": {
+      "label": "negative",
+      "confidence": 0.865
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 2,
+      "severity": 3,
+      "confirmation": 5,
+      "novelty": 0.4,
+      "justification": 4,
+      "calibration": 4
+    }
+  },
+  {
+    "id": "a018",
+    "headline": "TSLA settles class-action lawsuit for $450M",
+    "ticker": "TSLA",
+    "source": "Reuters",
+    "date": "2024-12-12",
+    "human": "negative",
+    "vader": {
+      "compound": 0.5741,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.712
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.677
+    },
+    "gemini": {
+      "label": "negative",
+      "polarity": -3,
+      "severity": 2,
+      "confirmation": 5,
+      "novelty": 0.6,
+      "justification": 3,
+      "calibration": 3
+    }
+  },
+  {
+    "id": "a019",
+    "headline": "AAPL expands operations into Southeast Asia market",
+    "ticker": "AAPL",
+    "source": "Bloomberg",
+    "date": "2024-12-21",
+    "human": "positive",
+    "vader": {
+      "compound": 0.5082,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.85
+    },
+    "roberta": {
+      "label": "negative",
+      "confidence": 0.861
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 2,
+      "severity": 2,
+      "confirmation": 5,
+      "novelty": 0.6,
+      "justification": 5,
+      "calibration": 3
+    }
+  },
+  {
+    "id": "a020",
+    "headline": "MSFT reports softer demand in core segment, mixed outlook",
+    "ticker": "MSFT",
+    "source": "CNBC",
+    "date": "2024-12-24",
+    "human": "neutral",
+    "vader": {
+      "compound": 0.6049,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "positive",
+      "confidence": 0.89
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.616
+    },
+    "gemini": {
+      "label": "negative",
+      "polarity": -1,
+      "severity": 3,
+      "confirmation": 4,
+      "novelty": 0.8,
+      "justification": 4,
+      "calibration": 5
+    }
+  },
+  {
+    "id": "a021",
+    "headline": "GOOGL downgraded by major Wall Street firm on valuation concerns",
+    "ticker": "GOOGL",
+    "source": "Financial Times",
+    "date": "2024-12-30",
+    "human": "negative",
+    "vader": {
+      "compound": 0.202,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.698
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.848
+    },
+    "gemini": {
+      "label": "negative",
+      "polarity": -2,
+      "severity": 2,
+      "confirmation": 4,
+      "novelty": 1.0,
+      "justification": 5,
+      "calibration": 4
+    }
+  },
+  {
+    "id": "a022",
+    "headline": "JPM announces strategic partnership with leading AI startup",
+    "ticker": "JPM",
+    "source": "WSJ",
+    "date": "2025-01-07",
+    "human": "positive",
+    "vader": {
+      "compound": 0.4858,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.657
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.819
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 2,
+      "severity": 3,
+      "confirmation": 4,
+      "novelty": 0.4,
+      "justification": 4,
+      "calibration": 5
+    }
+  },
+  {
+    "id": "a023",
+    "headline": "XOM discloses cybersecurity incident, scope under investigation",
+    "ticker": "XOM",
+    "source": "Reuters",
+    "date": "2025-01-12",
+    "human": "negative",
+    "vader": {
+      "compound": -0.7117,
+      "label": "negative"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.894
+    },
+    "roberta": {
+      "label": "negative",
+      "confidence": 0.751
+    },
+    "gemini": {
+      "label": "negative",
+      "polarity": -2,
+      "severity": 4,
+      "confirmation": 3,
+      "novelty": 0.6,
+      "justification": 5,
+      "calibration": 4
+    }
+  },
+  {
+    "id": "a024",
+    "headline": "TSLA returns capital to shareholders via special dividend",
+    "ticker": "TSLA",
+    "source": "Bloomberg",
+    "date": "2025-01-21",
+    "human": "positive",
+    "vader": {
+      "compound": 0.6313,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "negative",
+      "confidence": 0.811
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.744
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 2,
+      "severity": 3,
+      "confirmation": 5,
+      "novelty": 0.4,
+      "justification": 5,
+      "calibration": 5
+    }
+  },
+  {
+    "id": "a025",
+    "headline": "AAPL faces increased competition in key product category",
+    "ticker": "AAPL",
+    "source": "CNBC",
+    "date": "2025-01-24",
+    "human": "neutral",
+    "vader": {
+      "compound": 0.2362,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.882
+    },
+    "roberta": {
+      "label": "positive",
+      "confidence": 0.671
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 1,
+      "severity": 3,
+      "confirmation": 4,
+      "novelty": 0.2,
+      "justification": 5,
+      "calibration": 3
+    }
+  },
+  {
+    "id": "a026",
+    "headline": "MSFT raises full-year revenue guidance after strong quarter",
+    "ticker": "MSFT",
+    "source": "Financial Times",
+    "date": "2025-01-30",
+    "human": "positive",
+    "vader": {
+      "compound": 0.5523,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "positive",
+      "confidence": 0.812
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.831
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 2,
+      "severity": 4,
+      "confirmation": 4,
+      "novelty": 1.0,
+      "justification": 5,
+      "calibration": 4
+    }
+  },
+  {
+    "id": "a027",
+    "headline": "GOOGL delays product launch to Q1 next year",
+    "ticker": "GOOGL",
+    "source": "WSJ",
+    "date": "2025-02-05",
+    "human": "negative",
+    "vader": {
+      "compound": 0.3714,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.803
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.809
+    },
+    "gemini": {
+      "label": "negative",
+      "polarity": -3,
+      "severity": 2,
+      "confirmation": 5,
+      "novelty": 0.4,
+      "justification": 5,
+      "calibration": 3
+    }
+  },
+  {
+    "id": "a028",
+    "headline": "JPM appoints new CFO with restructuring experience",
+    "ticker": "JPM",
+    "source": "Reuters",
+    "date": "2025-02-10",
+    "human": "neutral",
+    "vader": {
+      "compound": 0.3462,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.865
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.629
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 1,
+      "severity": 2,
+      "confirmation": 3,
+      "novelty": 0.4,
+      "justification": 5,
+      "calibration": 4
+    }
+  },
+  {
+    "id": "a029",
+    "headline": "XOM earnings beat tempered by cautious forward guidance",
+    "ticker": "XOM",
+    "source": "Bloomberg",
+    "date": "2025-02-18",
+    "human": "neutral",
+    "vader": {
+      "compound": 0.2215,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "negative",
+      "confidence": 0.96
+    },
+    "roberta": {
+      "label": "neutral",
+      "confidence": 0.902
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 1,
+      "severity": 3,
+      "confirmation": 4,
+      "novelty": 0.4,
+      "justification": 4,
+      "calibration": 4
+    }
+  },
+  {
+    "id": "a030",
+    "headline": "TSLA announces accelerated buyback after asset sale",
+    "ticker": "TSLA",
+    "source": "CNBC",
+    "date": "2025-02-26",
+    "human": "positive",
+    "vader": {
+      "compound": 0.6221,
+      "label": "positive"
+    },
+    "finbert": {
+      "label": "neutral",
+      "confidence": 0.764
+    },
+    "roberta": {
+      "label": "positive",
+      "confidence": 0.685
+    },
+    "gemini": {
+      "label": "positive",
+      "polarity": 2,
+      "severity": 3,
+      "confirmation": 4,
+      "novelty": 0.8,
+      "justification": 5,
+      "calibration": 4
+    }
+  }
+]
