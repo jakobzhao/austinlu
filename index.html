@@ -4,73 +4,85 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Financial Sentiment Explorer — Austin Lu</title>
-<link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles-index.css" />
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+  if (window.Chart) {
+    Chart.defaults.font.family = "'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif";
+    Chart.defaults.font.size = 11;
+    Chart.defaults.color = '#57534e';
+    Chart.defaults.borderColor = '#e7e5e4';
+  }
+</script>
 </head>
 <body>
-<header>
-  <h1>Financial Sentiment Explorer</h1>
-  <p class="subtitle">
-    Companion demo for <em>Rethinking Financial Sentiment Analysis: From Polarity Classification to Structured LLM Evaluation</em> — Austin Lu.
-    Click an article to compare how four models read it.
-    <span class="warn">All data on this page is synthetic and for illustration only.</span>
-  </p>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <p class="eyebrow">Companion to <em>Rethinking Financial Sentiment Analysis</em> · Austin Lu</p>
+    <h1>Financial Sentiment Explorer</h1>
+    <p class="lede">A side-by-side reading of how VADER, FinBERT, RoBERTa, and a rubric-based Gemini interpret the same financial headline — alongside the market reaction in the surrounding window.</p>
+    <p class="footnote">All data on this page is synthetic, for illustration only. A real-data preview lives at <a href="test.html">test.html</a>.</p>
+  </div>
 </header>
 
-<main class="grid">
-  <section class="panel" id="panel-news">
-    <h2>News feed</h2>
+<main class="layout">
+
+  <aside class="col-news" aria-label="News feed">
+    <div class="section-label">News feed</div>
     <div class="filters">
-      <label>Source
-        <select id="filter-source"><option value="">All</option></select>
-      </label>
-      <label>Ticker
-        <select id="filter-ticker"><option value="">All</option></select>
-      </label>
+      <select id="filter-source" aria-label="Filter by source"><option value="">All sources</option></select>
+      <select id="filter-ticker" aria-label="Filter by ticker"><option value="">All tickers</option></select>
     </div>
-    <ul id="news-list"></ul>
-  </section>
+    <ul id="news-list" class="news-list"></ul>
+  </aside>
 
-  <section class="panel" id="panel-models">
-    <h2>Model comparison</h2>
-    <div id="article-detail">
-      <p class="hint">Select an article to see all four models' verdicts side by side.</p>
-    </div>
-  </section>
+  <div class="col-detail">
 
-  <section class="panel" id="panel-price">
-    <h2>Price reaction</h2>
-    <div class="chart-wrap"><canvas id="price-chart"></canvas></div>
-    <p class="caption" id="price-caption">Synthetic price series. Marker shows the article date; ±5 trading-day window highlighted.</p>
-    <div id="interpretation" class="interp"></div>
-  </section>
-
-  <section class="panel" id="panel-aggregate">
-    <h2>Aggregate view</h2>
-    <div class="agg-row">
-      <div class="agg-block">
-        <h3>Confusion vs. human label</h3>
-        <select id="confusion-model">
-          <option value="vader">VADER</option>
-          <option value="finbert">FinBERT</option>
-          <option value="roberta">RoBERTa</option>
-          <option value="gemini" selected>Gemini (rubric)</option>
-        </select>
-        <table id="confusion-table"></table>
-        <p class="agg-stats" id="confusion-stats"></p>
+    <section class="block" aria-labelledby="lbl-models">
+      <div class="section-label" id="lbl-models">Model comparison</div>
+      <div id="article-detail">
+        <p class="hint">Select an article to see all four models' verdicts side by side.</p>
       </div>
-      <div class="agg-block">
-        <h3>Source × mean Gemini polarity</h3>
-        <table id="source-heatmap"></table>
-        <p class="caption">Higher = more positive framing. Polarity ranges −3…+3.</p>
+    </section>
+
+    <section class="block" aria-labelledby="lbl-price">
+      <div class="section-label" id="lbl-price">Price reaction</div>
+      <div class="chart-wrap"><canvas id="price-chart"></canvas></div>
+      <p class="caption" id="price-caption">Synthetic price series. Marker shows the article date; ±5 trading-day window highlighted.</p>
+      <div id="interpretation" class="interp"></div>
+    </section>
+
+    <section class="block" aria-labelledby="lbl-aggregate">
+      <div class="section-label" id="lbl-aggregate">Aggregate view</div>
+      <div class="agg-row">
+        <div class="agg-block">
+          <h3>Confusion vs. human label</h3>
+          <select id="confusion-model" aria-label="Choose model for confusion matrix">
+            <option value="vader">VADER</option>
+            <option value="finbert">FinBERT</option>
+            <option value="roberta">RoBERTa</option>
+            <option value="gemini" selected>Gemini (rubric)</option>
+          </select>
+          <table id="confusion-table"></table>
+          <p class="agg-stats" id="confusion-stats"></p>
+        </div>
+        <div class="agg-block">
+          <h3>Source × mean Gemini polarity</h3>
+          <table id="source-heatmap"></table>
+          <p class="caption">Higher = more positive framing. Polarity ranges −3…+3.</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+  </div>
 </main>
 
-<footer>
-  <p>Built as a frontend-only demo (no server, no API calls). View the source on
-    <a href="https://github.com/">GitHub</a> · Charts by Chart.js.</p>
+<footer class="site-footer">
+  <p>Frontend-only demo · No backend, no API calls · Charts by Chart.js</p>
 </footer>
 
 <script type="module" src="app.js"></script>
