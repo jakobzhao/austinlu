@@ -3,17 +3,26 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Financial Sentiment Explorer — Austin Lu</title>
+<title>Financial Sentiment Explorer (real data preview) — Austin Lu</title>
 <link rel="stylesheet" href="styles.css" />
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+  window.DATA_PATHS = {
+    articles: "data/real-articles.json",
+    prices: "data/real-prices.json",
+  };
+</script>
 </head>
 <body>
 <header>
-  <h1>Financial Sentiment Explorer</h1>
+  <h1>Financial Sentiment Explorer <span class="badge">real-data preview</span></h1>
   <p class="subtitle">
     Companion demo for <em>Rethinking Financial Sentiment Analysis: From Polarity Classification to Structured LLM Evaluation</em> — Austin Lu.
-    Click an article to compare how four models read it.
-    <span class="warn">All data on this page is synthetic and for illustration only.</span>
+    This page uses <strong>real headlines</strong> from company press releases (each row links to the primary source),
+    <strong>real daily closes</strong> from Yahoo Finance, and <strong>real VADER</strong> scores computed locally.
+    FinBERT, RoBERTa, and Gemini predictions are not yet computed for this dataset and appear as
+    <em>not computed</em> in the model table.
+    <span class="warn">Data refreshed via <code>python3 scripts/build_real_data.py</code>.</span>
   </p>
 </header>
 
@@ -41,7 +50,7 @@
   <section class="panel" id="panel-price">
     <h2>Price reaction</h2>
     <div class="chart-wrap"><canvas id="price-chart"></canvas></div>
-    <p class="caption" id="price-caption">Synthetic price series. Marker shows the article date; ±5 trading-day window highlighted.</p>
+    <p class="caption" id="price-caption">Daily closes from Yahoo Finance. Marker shows the article date; ±5 trading-day window highlighted.</p>
     <div id="interpretation" class="interp"></div>
   </section>
 
@@ -50,27 +59,22 @@
     <div class="agg-row">
       <div class="agg-block">
         <h3>Confusion vs. human label</h3>
-        <select id="confusion-model">
-          <option value="vader">VADER</option>
-          <option value="finbert">FinBERT</option>
-          <option value="roberta">RoBERTa</option>
-          <option value="gemini" selected>Gemini (rubric)</option>
-        </select>
+        <select id="confusion-model"></select>
         <table id="confusion-table"></table>
         <p class="agg-stats" id="confusion-stats"></p>
       </div>
       <div class="agg-block">
-        <h3>Source × mean Gemini polarity</h3>
+        <h3>Source × mean polarity</h3>
         <table id="source-heatmap"></table>
-        <p class="caption">Higher = more positive framing. Polarity ranges −3…+3.</p>
+        <p class="caption">When Gemini rubric is available, polarity ranges −3…+3. Otherwise falls back to mean VADER compound (−1…+1).</p>
       </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <p>Built as a frontend-only demo (no server, no API calls). View the source on
-    <a href="https://github.com/">GitHub</a> · Charts by Chart.js.</p>
+  <p>Real-data preview — frontend-only demo (Yahoo Finance v8 + VADER). Headlines link to primary sources for verification.
+    Synthetic version: <a href="index.html">index.html</a>.</p>
 </footer>
 
 <script type="module" src="app.js"></script>

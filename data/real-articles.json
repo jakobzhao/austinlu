@@ -1,0 +1,146 @@
+[
+  {
+    "id": "r001",
+    "headline": "Apple reports fourth quarter results: revenue grows 6% to $94.9 billion",
+    "ticker": "AAPL",
+    "source": "Apple Newsroom",
+    "source_url": "https://www.apple.com/newsroom/2024/10/apple-reports-fourth-quarter-results/",
+    "date": "2024-10-31",
+    "human": "positive",
+    "vader": {
+      "compound": 0.0,
+      "label": "neutral"
+    },
+    "finbert": null,
+    "roberta": null,
+    "gemini": null
+  },
+  {
+    "id": "r002",
+    "headline": "Microsoft cloud strength drives first quarter results: revenue $65.6B up 16%, Microsoft Cloud up 22%",
+    "ticker": "MSFT",
+    "source": "Microsoft Investor Relations",
+    "source_url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q1/press-release-webcast",
+    "date": "2024-10-30",
+    "human": "positive",
+    "vader": {
+      "compound": 0.4939,
+      "label": "positive"
+    },
+    "finbert": null,
+    "roberta": null,
+    "gemini": null
+  },
+  {
+    "id": "r003",
+    "headline": "NVIDIA announces third-quarter fiscal 2025 results: revenue $35.1 billion, up 94% year over year",
+    "ticker": "NVDA",
+    "source": "NVIDIA Newsroom",
+    "source_url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2025",
+    "date": "2024-11-20",
+    "human": "positive",
+    "vader": {
+      "compound": 0.0,
+      "label": "neutral"
+    },
+    "finbert": null,
+    "roberta": null,
+    "gemini": null
+  },
+  {
+    "id": "r004",
+    "headline": "Intel reports third-quarter 2024 financial results, including significant restructuring and impairment charges",
+    "ticker": "INTC",
+    "source": "Intel Investor Relations",
+    "source_url": "https://www.intc.com/news-events/press-releases/detail/1716/intel-reports-third-quarter-2024-financial-results",
+    "date": "2024-10-31",
+    "human": "negative",
+    "vader": {
+      "compound": -0.0772,
+      "label": "negative"
+    },
+    "finbert": null,
+    "roberta": null,
+    "gemini": null
+  },
+  {
+    "id": "r005",
+    "headline": "The Walt Disney Company reports fourth quarter and full year earnings for fiscal 2024",
+    "ticker": "DIS",
+    "source": "The Walt Disney Company",
+    "source_url": "https://thewaltdisneycompany.com/the-walt-disney-company-reports-fourth-quarter-and-full-year-earnings-for-fiscal-2024/",
+    "date": "2024-11-14",
+    "human": "positive",
+    "vader": {
+      "compound": 0.0,
+      "label": "neutral"
+    },
+    "finbert": null,
+    "roberta": null,
+    "gemini": null
+  },
+  {
+    "id": "r006",
+    "headline": "Delta Air Lines announces September quarter 2024 financial results, double-digit operating margin",
+    "ticker": "DAL",
+    "source": "Delta News Hub",
+    "source_url": "https://news.delta.com/delta-air-lines-announces-september-quarter-2024-financial-results",
+    "date": "2024-10-10",
+    "human": "positive",
+    "vader": {
+      "compound": 0.0,
+      "label": "neutral"
+    },
+    "finbert": null,
+    "roberta": null,
+    "gemini": null
+  },
+  {
+    "id": "r007",
+    "headline": "Coca-Cola reports third quarter 2024 results: net revenues down 1%, organic revenues up 9%",
+    "ticker": "KO",
+    "source": "The Coca-Cola Company",
+    "source_url": "https://www.coca-colacompany.com/media-center/coca-cola-reports-third-quarter-2024-results",
+    "date": "2024-10-23",
+    "human": "neutral",
+    "vader": {
+      "compound": 0.0,
+      "label": "neutral"
+    },
+    "finbert": null,
+    "roberta": null,
+    "gemini": null
+  },
+  {
+    "id": "r008",
+    "headline": "IBM releases third-quarter results: double-digit growth in Software including Red Hat re-acceleration",
+    "ticker": "IBM",
+    "source": "IBM Newsroom",
+    "source_url": "https://newsroom.ibm.com/2024-10-23-IBM-Releases-Third-Quarter-Results",
+    "date": "2024-10-23",
+    "human": "positive",
+    "vader": {
+      "compound": 0.3818,
+      "label": "positive"
+    },
+    "finbert": null,
+    "roberta": null,
+    "gemini": null
+  },
+  {
+    "id": "r009",
+    "headline": "Starbucks names Brian Niccol Chairman and CEO",
+    "ticker": "SBUX",
+    "source": "Starbucks Press",
+    "source_url": "https://about.starbucks.com/press/2024/starbucks-names-brian-niccol-chairman-and-ceo/",
+    "date": "2024-08-13",
+    "human": "positive",
+    "vader": {
+      "compound": 0.0,
+      "label": "neutral"
+    },
+    "finbert": null,
+    "roberta": null,
+    "gemini": null
+  }
+]

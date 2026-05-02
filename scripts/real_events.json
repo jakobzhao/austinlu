@@ -1,0 +1,83 @@
+[
+  {
+    "id": "r001",
+    "ticker": "AAPL",
+    "date": "2024-10-31",
+    "source": "Apple Newsroom",
+    "headline": "Apple reports fourth quarter results: revenue grows 6% to $94.9 billion",
+    "source_url": "https://www.apple.com/newsroom/2024/10/apple-reports-fourth-quarter-results/",
+    "human": "positive"
+  },
+  {
+    "id": "r002",
+    "ticker": "MSFT",
+    "date": "2024-10-30",
+    "source": "Microsoft Investor Relations",
+    "headline": "Microsoft cloud strength drives first quarter results: revenue $65.6B up 16%, Microsoft Cloud up 22%",
+    "source_url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2025-Q1/press-release-webcast",
+    "human": "positive"
+  },
+  {
+    "id": "r003",
+    "ticker": "NVDA",
+    "date": "2024-11-20",
+    "source": "NVIDIA Newsroom",
+    "headline": "NVIDIA announces third-quarter fiscal 2025 results: revenue $35.1 billion, up 94% year over year",
+    "source_url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2025",
+    "human": "positive"
+  },
+  {
+    "id": "r004",
+    "ticker": "INTC",
+    "date": "2024-10-31",
+    "source": "Intel Investor Relations",
+    "headline": "Intel reports third-quarter 2024 financial results, including significant restructuring and impairment charges",
+    "source_url": "https://www.intc.com/news-events/press-releases/detail/1716/intel-reports-third-quarter-2024-financial-results",
+    "human": "negative"
+  },
+  {
+    "id": "r005",
+    "ticker": "DIS",
+    "date": "2024-11-14",
+    "source": "The Walt Disney Company",
+    "headline": "The Walt Disney Company reports fourth quarter and full year earnings for fiscal 2024",
+    "source_url": "https://thewaltdisneycompany.com/the-walt-disney-company-reports-fourth-quarter-and-full-year-earnings-for-fiscal-2024/",
+    "human": "positive"
+  },
+  {
+    "id": "r006",
+    "ticker": "DAL",
+    "date": "2024-10-10",
+    "source": "Delta News Hub",
+    "headline": "Delta Air Lines announces September quarter 2024 financial results, double-digit operating margin",
+    "source_url": "https://news.delta.com/delta-air-lines-announces-september-quarter-2024-financial-results",
+    "human": "positive"
+  },
+  {
+    "id": "r007",
+    "ticker": "KO",
+    "date": "2024-10-23",
+    "source": "The Coca-Cola Company",
+    "headline": "Coca-Cola reports third quarter 2024 results: net revenues down 1%, organic revenues up 9%",
+    "source_url": "https://www.coca-colacompany.com/media-center/coca-cola-reports-third-quarter-2024-results",
+    "human": "neutral"
+  },
+  {
+    "id": "r008",
+    "ticker": "IBM",
+    "date": "2024-10-23",
+    "source": "IBM Newsroom",
+    "headline": "IBM releases third-quarter results: double-digit growth in Software including Red Hat re-acceleration",
+    "source_url": "https://newsroom.ibm.com/2024-10-23-IBM-Releases-Third-Quarter-Results",
+    "human": "positive"
+  },
+  {
+    "id": "r009",
+    "ticker": "SBUX",
+    "date": "2024-08-13",
+    "source": "Starbucks Press",
+    "headline": "Starbucks names Brian Niccol Chairman and CEO",
+    "source_url": "https://about.starbucks.com/press/2024/starbucks-names-brian-niccol-chairman-and-ceo/",
+    "human": "positive"
+  }
+]
